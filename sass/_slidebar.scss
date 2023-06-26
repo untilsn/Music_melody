@@ -1,0 +1,46 @@
+.wrapper {
+  .slidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    background-color: #2f0743;
+
+    padding: 20px;
+    .logo {
+      height: 80px;
+      width: 100%;
+      border-bottom: 1px solid #000;
+      img {
+        margin: 0 auto;
+        height: 60px;
+        object-fit: cover;
+      }
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+      a {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        text-transform: capitalize;
+        &.active {
+          background: -webkit-linear-gradient(right, #0a6ebd, #090580, #4942e4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:hover {
+          background: -webkit-linear-gradient(right, #0a6ebd, #090580, #4942e4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
